@@ -1,47 +1,42 @@
-# Experiment 1: Library Management System 📚
+# Database Management Systems - Lab Experiments
 
-### => Experiment
-[cite_start]**Topic:** Design and Implementation of a Library Management System database using **PostgreSQL**[cite: 45, 50].
-
-### => Objective
-[cite_start]The primary goals of this session include[cite: 53]:
-* [cite_start]**Hands-on Experience:** Gain practical knowledge in implementing **DDL** (Data Definition Language), **DML** (Data Manipulation Language), and **DCL** (Data Control Language)[cite: 54].
-* [cite_start]**Security Implementation:** Implementing **role-based privileges** and password-protected access to secure sensitive data[cite: 55].
-* [cite_start]**Data Integrity:** Ensuring consistency through the use of **Primary Keys**, **Foreign Keys**, and **Constraints**[cite: 47, 58].
+This repository contains the documentation and SQL implementation for database experiments focusing on Relational Database Management Systems (RDBMS) using **PostgreSQL** and **pgAdmin**.
 
 ---
 
-### => Practical / Experiment Steps
-[cite_start]In place of the experiment question, the following tasks were performed[cite: 9, 38]:
-1. [cite_start]**Database Schema Design:** Create tables for `BOOK_S`, `LIBRARY_VISITORS`, and `BOOK_ISSUE`[cite: 57].
-2. [cite_start]**Constraint Application:** Use `CHECK` constraints (e.g., Age >= 17) and `NOT NULL` to ensure data validity[cite: 58].
-3. [cite_start]**Data Operations:** Perform record insertion and updates, such as adding an `ISSUE_DATE` to transactions[cite: 59].
-4. [cite_start]**Role Management:** Create a role named **Librarian** with a secure password[cite: 61].
-5. [cite_start]**Access Control:** Grant and subsequently revoke `SELECT`, `INSERT`, `UPDATE`, and `DELETE` permissions to test security protocols[cite: 62, 63].
+## 🧪 Experiment 1: Library Management System
 
-### => Procedure of the Experiment
-[cite_start]The following sequential steps were followed[cite: 39]:
-1. [cite_start]**System Initialization:** Started the system and logged into the workstation[cite: 16].
-2. [cite_start]**Software Launch:** Opened **pgAdmin** to interact with the PostgreSQL server[cite: 17, 52].
-3. [cite_start]**Database Setup:** Created a new database dedicated to the Library Management System[cite: 18].
-4. [cite_start]**SQL Execution:** * Wrote and executed DDL scripts to build the table structures[cite: 19].
-    * [cite_start]Populated tables with sample data using DML commands[cite: 20].
-    * [cite_start]Configured user roles and permissions via DCL[cite: 20].
-5. [cite_start]**Verification:** Used `SELECT` queries to verify that all records were stored and permissions were correctly applied[cite: 21].
-6. [cite_start]**Documentation:** Noted down results and captured screenshots for the record[cite: 22, 23].
+### 1. Aim & Objective
+To design and implement a robust **Library Management System** database. The focus is on establishing relational integrity through constraints and implementing **Role-Based Access Control (RBAC)** to ensure data security.
 
----
+**Key Objectives:**
+* Implement **DDL** (Data Definition Language), **DML** (Data Manipulation Language), and **DCL** (Data Control Language) operations.
+* Apply data integrity constraints: `PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, and `CHECK`.
+* Manage database security via password-protected roles and privilege management.
 
-### => Input / Output Details and Screenshots
-* [cite_start]**Input Details:** SQL scripts defining schema, data entries (e.g., Book: *Harry Potter*, Visitor: *Sumir Malhotra*), and role definitions[cite: 25, 40].
-* [cite_start]**Output Details:** Query result grids showing successful table updates and privilege status[cite: 26, 40].
+### 2. Tools Used
+* **Database:** PostgreSQL 16+
+* **Interface:** pgAdmin 4
+* **Language:** SQL (Structured Query Language)
 
-> [cite_start]**[Insert Screenshots Here]** > *Attach screenshots clearly showing the execution of CREATE, GRANT, and REVOKE commands[cite: 27, 40].*
+### 3. Database Schema
+The system utilizes three primary tables to manage the library workflow:
+* **BOOK_S**: Stores catalog information (Book ID, Title, Author).
+* **LIBRARY_VISITORS**: Manages member details (Visitor ID, Name, City).
+* **BOOK_ISSUE**: Tracks transaction records (Issue ID, Book ID, Visitor ID, Date).
 
----
 
-### => Learning Outcome
-[cite_start]After completing this practical, the following was achieved[cite: 28, 41]:
-* [cite_start]**Concepts Understood:** Deep understanding of relational database security and integrity constraints[cite: 31].
-* [cite_start]**Skills Developed:** Proficiency in managing complex schema relationships and role-based access control[cite: 32].
-* [cite_start]**Practical Exposure:** Real-world experience with **PostgreSQL** and **pgAdmin**[cite: 33].
+
+### 4. Procedure & Implementation
+1.  **Schema Definition:** Execute `CREATE TABLE` commands with appropriate data types and constraints.
+2.  **Schema Modification:** Utilize `ALTER` commands to add columns or refine constraints.
+3.  **Data Population:** Insert sample records (e.g., Book: "Harry Potter", Visitor: "Sumir Malhotra").
+4.  **Security Setup:**
+    * Create a `Librarian` role with a secure password.
+    * **Grant Permissions:** Provide `SELECT`, `INSERT`, and `UPDATE` access to the Librarian.
+    * **Revoke Permissions:** Demonstrate how to restrict access using the `REVOKE` command.
+
+### 5. Learning Outcomes
+* **Technical Proficiency:** Gained hands-on experience with PostgreSQL and pgAdmin.
+* **Security Awareness:** Understood the implementation of RBAC in professional database environments.
+* **Relational Integrity:** Mastered the use of foreign keys to maintain data consistency.
