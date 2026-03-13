@@ -117,7 +117,6 @@ FROM employees;
 ```
 
 **Output:**
-<img width="794" height="841" alt="1" src="https://github.com/user-attachments/assets/1b88ef74-5cd2-43f2-9d4f-3ae8a19fe613" />
 
 
 
