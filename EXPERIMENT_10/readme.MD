@@ -49,7 +49,6 @@ CREATE TABLE employees (
 **Output:**
 
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/1.png
 
 
 
@@ -62,7 +61,6 @@ START 1;
 **Output:**
 
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/2.png
 
 
 
@@ -82,7 +80,6 @@ $$ LANGUAGE plpgsql;
 **Output:**
 
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/3.png
 
 
 
@@ -97,7 +94,6 @@ EXECUTE FUNCTION auto_emp_id();
 **Output:**
 
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/4.png
 
 
 **5. Input:**
@@ -112,7 +108,6 @@ VALUES ('Bob', 'IT');
 **Output:**
 
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/5.png
 
 
 
@@ -123,7 +118,6 @@ SELECT * FROM employees;
 
 **Output:**
 
-https://github.com/mehak2605/24BAI70075_Mehak_KRG1_BAI_DBMS/blob/main/Experiment_10/Exp10_Images/6.png
 
 
 
